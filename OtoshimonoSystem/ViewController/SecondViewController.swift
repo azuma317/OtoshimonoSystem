@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import RealmSwift
 
 class SecondViewController: ViewController {
+    
+    //jsonファイルを返してくれえるURL
+    let url = "http://macintosh-no-macbook-pro.local:8888/user_get.php"
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
