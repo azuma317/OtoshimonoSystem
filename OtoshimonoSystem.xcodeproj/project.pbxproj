@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		755E00E21F87160900D0292F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E00E11F87160900D0292F /* AppDelegate.swift */; };
-		755E00E41F87160900D0292F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E00E31F87160900D0292F /* ViewController.swift */; };
+		755E00E41F87160900D0292F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E00E31F87160900D0292F /* FirstViewController.swift */; };
 		755E00E71F87160900D0292F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 755E00E51F87160900D0292F /* Main.storyboard */; };
 		755E00E91F87160900D0292F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 755E00E81F87160900D0292F /* Assets.xcassets */; };
 		755E00EC1F87160900D0292F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 755E00EA1F87160900D0292F /* LaunchScreen.storyboard */; };
+		755E00F41F87748B00D0292F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E00F31F87748B00D0292F /* SecondViewController.swift */; };
+		755E00F71F8774D900D0292F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E00F61F8774D900D0292F /* TableViewCell.swift */; };
+		A550F771624D1848BF5BAF85 /* Pods_OtoshimonoSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85806EAD1496B33D67995360 /* Pods_OtoshimonoSystem.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		755E00DE1F87160900D0292F /* OtoshimonoSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OtoshimonoSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		755E00E11F87160900D0292F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		755E00E31F87160900D0292F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		755E00E31F87160900D0292F /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		755E00E61F87160900D0292F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		755E00E81F87160900D0292F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		755E00EB1F87160900D0292F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		755E00ED1F87160900D0292F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		755E00F31F87748B00D0292F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		755E00F61F8774D900D0292F /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		85806EAD1496B33D67995360 /* Pods_OtoshimonoSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OtoshimonoSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FFA55CA48DCD537AAC7DA04 /* Pods-OtoshimonoSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OtoshimonoSystem.release.xcconfig"; path = "Pods/Target Support Files/Pods-OtoshimonoSystem/Pods-OtoshimonoSystem.release.xcconfig"; sourceTree = "<group>"; };
+		ED8F3D26E94DBD5C2597D57C /* Pods-OtoshimonoSystem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OtoshimonoSystem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OtoshimonoSystem/Pods-OtoshimonoSystem.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A550F771624D1848BF5BAF85 /* Pods_OtoshimonoSystem.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12C124B4ED2F0BBA816930CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED8F3D26E94DBD5C2597D57C /* Pods-OtoshimonoSystem.debug.xcconfig */,
+				8FFA55CA48DCD537AAC7DA04 /* Pods-OtoshimonoSystem.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		755E00D51F87160900D0292F = {
 			isa = PBXGroup;
 			children = (
 				755E00E01F87160900D0292F /* OtoshimonoSystem */,
 				755E00DF1F87160900D0292F /* Products */,
+				12C124B4ED2F0BBA816930CE /* Pods */,
+				BD4E504F0DB181DB469B7EED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +74,32 @@
 		755E00E01F87160900D0292F /* OtoshimonoSystem */ = {
 			isa = PBXGroup;
 			children = (
+				755E00F51F87749200D0292F /* ViewController */,
 				755E00E11F87160900D0292F /* AppDelegate.swift */,
-				755E00E31F87160900D0292F /* ViewController.swift */,
 				755E00E51F87160900D0292F /* Main.storyboard */,
 				755E00E81F87160900D0292F /* Assets.xcassets */,
 				755E00EA1F87160900D0292F /* LaunchScreen.storyboard */,
 				755E00ED1F87160900D0292F /* Info.plist */,
+				755E00F61F8774D900D0292F /* TableViewCell.swift */,
 			);
 			path = OtoshimonoSystem;
+			sourceTree = "<group>";
+		};
+		755E00F51F87749200D0292F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				755E00E31F87160900D0292F /* FirstViewController.swift */,
+				755E00F31F87748B00D0292F /* SecondViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BD4E504F0DB181DB469B7EED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85806EAD1496B33D67995360 /* Pods_OtoshimonoSystem.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +109,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 755E00F01F87160900D0292F /* Build configuration list for PBXNativeTarget "OtoshimonoSystem" */;
 			buildPhases = (
+				2C57ADB424EEA36D96873D7A /* [CP] Check Pods Manifest.lock */,
 				755E00DA1F87160900D0292F /* Sources */,
 				755E00DB1F87160900D0292F /* Frameworks */,
 				755E00DC1F87160900D0292F /* Resources */,
+				280C4B4E5AD8DD5FC0C1A9F7 /* [CP] Embed Pods Frameworks */,
+				16A4E5EDF03662C610A235B9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +172,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		16A4E5EDF03662C610A235B9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OtoshimonoSystem/Pods-OtoshimonoSystem-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		280C4B4E5AD8DD5FC0C1A9F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OtoshimonoSystem/Pods-OtoshimonoSystem-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C57ADB424EEA36D96873D7A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		755E00DA1F87160900D0292F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				755E00E41F87160900D0292F /* ViewController.swift in Sources */,
+				755E00F41F87748B00D0292F /* SecondViewController.swift in Sources */,
+				755E00F71F8774D900D0292F /* TableViewCell.swift in Sources */,
+				755E00E41F87160900D0292F /* FirstViewController.swift in Sources */,
 				755E00E21F87160900D0292F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +363,7 @@
 		};
 		755E00F11F87160900D0292F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED8F3D26E94DBD5C2597D57C /* Pods-OtoshimonoSystem.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +379,7 @@
 		};
 		755E00F21F87160900D0292F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FFA55CA48DCD537AAC7DA04 /* Pods-OtoshimonoSystem.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
