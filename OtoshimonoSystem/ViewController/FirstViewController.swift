@@ -17,7 +17,7 @@ import Alamofire
 class ViewController: UIViewController {
     
     // jsonを返してくれるURL
-    let url: String = "http://macintosh-no-macbook-pro.local:8888/user_get.php"
+    let url: String = "JSONを返してくれるURL"
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -84,7 +84,7 @@ extension ViewController: UITableViewDataSource {
 
         cell.setCell(item: items[indexPath.item])
         
-        cell.imageView?.af_setImage(withURL: URL(string: "http://macintosh-no-macbook-pro.local:8888/image/\(items[indexPath.item].id).jpeg")!)
+        cell.imageView?.af_setImage(withURL: URL(string: "落とし物の写真のURL")!)
         
         return cell
     }

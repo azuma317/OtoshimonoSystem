@@ -19,11 +19,11 @@ struct Item {
     let detail: String
     
     init(json: JSON) {
-        id = json["id_number"].intValue
-        name = json["lost_title"].stringValue
-        date = json["pick_date"].stringValue
-        place = json["pick_place"].stringValue
-        kind = json["lost_kind"].intValue
-        detail = json["lost_detail"].stringValue
+        id = json["id"].intValue
+        name = json["title"].stringValue
+        date = json["date"].stringValue
+        place = json["place"].stringValue
+        kind = json["kind"].intValue
+        detail = json["detail"].stringValue
     }
 }

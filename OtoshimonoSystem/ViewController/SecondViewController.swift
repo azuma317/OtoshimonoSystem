@@ -25,7 +25,7 @@ class SecondViewController: ViewController {
         super.viewDidLoad()
         
         // itemがOptional型にしているので??0を入れておく
-        let url: URL = URL(string: "http://macintosh-no-macbook-pro.local:8888/image/\(item?.id ?? 0).jpeg")!
+        let url: URL = URL(string: "落とし物の写真のURL")!
         
         setData(item: item!)
         imageView.af_setImage(withURL: url)
