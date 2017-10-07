@@ -50,8 +50,6 @@ class ViewController: UIViewController {
             
             let json = JSON(data)
             
-            print(json)
-            
             self.items = json.arrayValue.map(Item.init(json: ))
             
         } , fail:{ (error: Error?) in
