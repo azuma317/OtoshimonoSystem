@@ -17,7 +17,6 @@ struct Item {
     let place: String
     let kind: Int
     let detail: String
-    let image: String
     
     init(json: JSON) {
         id = json["id_number"].intValue

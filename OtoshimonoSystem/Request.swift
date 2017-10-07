@@ -24,10 +24,10 @@ struct Request {
     }
     
     // URLからJSONを取ってくる
-    func request(success: @escaping (_ data: Dictionary<String, Any>)-> Void, fail: @escaping (_ error: Error?)-> Void) {
+    func request(success: @escaping (_ data: Any)-> Void, fail: @escaping (_ error: Error?)-> Void) {
         Alamofire.request(url, method: method, parameters: parameters).responseJSON { response in
             if response.result.isSuccess {
-                success(response.result.value as! Dictionary)
+                success(response.result.value as! Any)
             }else{
                 fail(response.result.error)
             }

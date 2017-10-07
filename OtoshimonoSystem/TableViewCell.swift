@@ -7,18 +7,21 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class TableViewCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    @IBOutlet weak var pickImage: UIImageView!
+    @IBOutlet weak var pickName: UILabel!
+    @IBOutlet weak var pickDate: UILabel!
+    @IBOutlet weak var pickPlace: UILabel!
+    @IBOutlet weak var pickDetail: UILabel!
+    
+    func setCell(item: Item) {
+        pickName.text = item.name
+        pickDate.text = item.date
+        pickPlace.text = item.place
+        pickDetail.text = item.detail
     }
 
 }
