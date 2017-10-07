@@ -29,7 +29,9 @@ class ViewController: UIViewController {
         
         getData()
         
-        tableView.reloadData()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
+            self.tableView.reloadData()
+        })
     }
     
     @IBAction func search(_ sender: Any) {
