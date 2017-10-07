@@ -17,6 +17,7 @@
 		755E00F91F87781000D0292F /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E00F81F87781000D0292F /* Request.swift */; };
 		755E00FC1F877B7D00D0292F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E00FB1F877B7D00D0292F /* Model.swift */; };
 		75A282D81F88A09D008EB274 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A282D71F88A09D008EB274 /* SearchViewController.swift */; };
+		75A282DA1F88E68F008EB274 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A282D91F88E68F008EB274 /* CategoryViewController.swift */; };
 		A550F771624D1848BF5BAF85 /* Pods_OtoshimonoSystem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85806EAD1496B33D67995360 /* Pods_OtoshimonoSystem.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		755E00F81F87781000D0292F /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		755E00FB1F877B7D00D0292F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		75A282D71F88A09D008EB274 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		75A282D91F88E68F008EB274 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		85806EAD1496B33D67995360 /* Pods_OtoshimonoSystem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OtoshimonoSystem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FFA55CA48DCD537AAC7DA04 /* Pods-OtoshimonoSystem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OtoshimonoSystem.release.xcconfig"; path = "Pods/Target Support Files/Pods-OtoshimonoSystem/Pods-OtoshimonoSystem.release.xcconfig"; sourceTree = "<group>"; };
 		ED8F3D26E94DBD5C2597D57C /* Pods-OtoshimonoSystem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OtoshimonoSystem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OtoshimonoSystem/Pods-OtoshimonoSystem.debug.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				755E00E31F87160900D0292F /* FirstViewController.swift */,
 				755E00F31F87748B00D0292F /* SecondViewController.swift */,
 				75A282D71F88A09D008EB274 /* SearchViewController.swift */,
+				75A282D91F88E68F008EB274 /* CategoryViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				75A282D81F88A09D008EB274 /* SearchViewController.swift in Sources */,
 				755E00F71F8774D900D0292F /* TableViewCell.swift in Sources */,
 				755E00F91F87781000D0292F /* Request.swift in Sources */,
+				75A282DA1F88E68F008EB274 /* CategoryViewController.swift in Sources */,
 				755E00FC1F877B7D00D0292F /* Model.swift in Sources */,
 				755E00E41F87160900D0292F /* FirstViewController.swift in Sources */,
 				755E00E21F87160900D0292F /* AppDelegate.swift in Sources */,

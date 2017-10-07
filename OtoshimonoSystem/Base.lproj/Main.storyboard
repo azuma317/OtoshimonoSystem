@@ -246,7 +246,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBd-1M-lv9">
-                                <rect key="frame" x="0.0" y="95" width="500" height="50"/>
+                                <rect key="frame" x="16" y="95" width="500" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="500" id="Bdh-DG-t5H"/>
                                     <constraint firstAttribute="height" constant="50" id="qgg-Eb-YFO"/>
@@ -287,11 +287,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B2s-xh-537">
-                                <rect key="frame" x="100" y="225" width="500" height="300"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="8la-Dw-cPO"/>
-                                    <constraint firstAttribute="width" constant="500" id="WRL-2K-et8"/>
-                                </constraints>
+                                <rect key="frame" x="200" y="265" width="624" height="403"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -302,16 +298,17 @@
                             <constraint firstItem="Z5r-hz-4ZH" firstAttribute="leading" secondItem="uTg-P8-OOH" secondAttribute="leading" id="4U6-wb-7rH"/>
                             <constraint firstItem="dog-Zg-UG5" firstAttribute="height" secondItem="Y2h-Ft-KsX" secondAttribute="height" id="6Dj-9P-77W"/>
                             <constraint firstItem="lQB-cK-xcC" firstAttribute="height" secondItem="dog-Zg-UG5" secondAttribute="height" id="FT8-9w-G8o"/>
-                            <constraint firstItem="B2s-xh-537" firstAttribute="top" secondItem="6FV-qL-JOe" secondAttribute="bottom" id="HRF-8P-xhx"/>
+                            <constraint firstItem="B2s-xh-537" firstAttribute="top" secondItem="6FV-qL-JOe" secondAttribute="bottom" constant="40" id="HRF-8P-xhx"/>
                             <constraint firstItem="lQB-cK-xcC" firstAttribute="top" secondItem="dog-Zg-UG5" secondAttribute="bottom" id="KR4-f0-5q9"/>
                             <constraint firstItem="Y2h-Ft-KsX" firstAttribute="top" secondItem="PBd-1M-lv9" secondAttribute="bottom" id="Lea-c0-mSa"/>
                             <constraint firstItem="dog-Zg-UG5" firstAttribute="top" secondItem="Y2h-Ft-KsX" secondAttribute="bottom" id="Myj-mz-gQ3"/>
                             <constraint firstItem="PBd-1M-lv9" firstAttribute="top" secondItem="0lv-3Y-Fep" secondAttribute="bottom" id="TqD-AP-92f"/>
                             <constraint firstItem="6FV-qL-JOe" firstAttribute="top" secondItem="lQB-cK-xcC" secondAttribute="bottom" id="XJW-Y6-PcC"/>
-                            <constraint firstItem="PBd-1M-lv9" firstAttribute="leading" secondItem="uTg-P8-OOH" secondAttribute="leading" id="ZjU-fu-HHw"/>
+                            <constraint firstItem="PBd-1M-lv9" firstAttribute="leading" secondItem="uTg-P8-OOH" secondAttribute="leading" constant="16" id="ZjU-fu-HHw"/>
                             <constraint firstItem="dog-Zg-UG5" firstAttribute="width" secondItem="Y2h-Ft-KsX" secondAttribute="width" id="btP-3F-CJj"/>
                             <constraint firstItem="0lv-3Y-Fep" firstAttribute="leading" secondItem="uTg-P8-OOH" secondAttribute="leading" id="cMO-KU-o1i"/>
-                            <constraint firstItem="B2s-xh-537" firstAttribute="leading" secondItem="uTg-P8-OOH" secondAttribute="leading" constant="100" id="fbO-3a-tHj"/>
+                            <constraint firstItem="uTg-P8-OOH" firstAttribute="trailing" secondItem="B2s-xh-537" secondAttribute="trailing" constant="200" id="f39-xn-ps9"/>
+                            <constraint firstItem="B2s-xh-537" firstAttribute="leading" secondItem="uTg-P8-OOH" secondAttribute="leading" constant="200" id="fbO-3a-tHj"/>
                             <constraint firstItem="6FV-qL-JOe" firstAttribute="height" secondItem="lQB-cK-xcC" secondAttribute="height" id="ggV-m2-a7X"/>
                             <constraint firstItem="lQB-cK-xcC" firstAttribute="width" secondItem="dog-Zg-UG5" secondAttribute="width" id="hT7-vm-Apw"/>
                             <constraint firstItem="Z5r-hz-4ZH" firstAttribute="bottom" secondItem="0lv-3Y-Fep" secondAttribute="bottom" id="k5P-Yb-jfX"/>
@@ -319,6 +316,7 @@
                             <constraint firstItem="0lv-3Y-Fep" firstAttribute="top" secondItem="uTg-P8-OOH" secondAttribute="top" constant="25" id="luq-qC-8ew"/>
                             <constraint firstItem="Y2h-Ft-KsX" firstAttribute="leading" secondItem="uTg-P8-OOH" secondAttribute="leading" constant="40" id="nzP-ry-9RS"/>
                             <constraint firstItem="lQB-cK-xcC" firstAttribute="leading" secondItem="dog-Zg-UG5" secondAttribute="leading" id="xSu-po-C9Z"/>
+                            <constraint firstItem="uTg-P8-OOH" firstAttribute="bottom" secondItem="B2s-xh-537" secondAttribute="bottom" constant="100" id="z0q-Lj-1h8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uTg-P8-OOH"/>
                     </view>
@@ -326,6 +324,7 @@
                         <outlet property="date" destination="dog-Zg-UG5" id="VDf-Nn-WgI"/>
                         <outlet property="detail" destination="6FV-qL-JOe" id="7li-hU-9TU"/>
                         <outlet property="id" destination="Y2h-Ft-KsX" id="25U-ae-FZq"/>
+                        <outlet property="imageView" destination="B2s-xh-537" id="0lk-Ic-ftf"/>
                         <outlet property="name" destination="PBd-1M-lv9" id="MPt-47-48D"/>
                         <outlet property="place" destination="lQB-cK-xcC" id="2LW-Dt-eW4"/>
                     </connections>
@@ -334,10 +333,10 @@
             </objects>
             <point key="canvasLocation" x="853" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--Category View Controller-->
         <scene sceneID="RbM-qA-5ax">
             <objects>
-                <viewController id="Mok-0i-GN0" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="categoryView" id="Mok-0i-GN0" customClass="CategoryViewController" customModule="OtoshimonoSystem" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8sU-NJ-1Jo">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -362,7 +361,7 @@
                                 <rect key="frame" x="0.0" y="95" width="1024" height="673"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="wBQ-VD-N8p">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" id="wBQ-VD-N8p" customClass="CategoryTableViewCell" customModule="OtoshimonoSystem" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="1024" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wBQ-VD-N8p" id="NYS-K4-RJ7">
@@ -430,8 +429,19 @@
                                                 <constraint firstItem="A98-Br-ixx" firstAttribute="leading" secondItem="VnH-Cn-hG0" secondAttribute="trailing" constant="8" id="pMg-z6-0RM"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="pickDate" destination="McV-hy-lYX" id="c8h-mo-zUH"/>
+                                            <outlet property="pickDetail" destination="49A-Eh-u3i" id="Upz-eF-z8j"/>
+                                            <outlet property="pickImage" destination="VnH-Cn-hG0" id="sbU-5P-S63"/>
+                                            <outlet property="pickName" destination="A98-Br-ixx" id="emG-A2-eKF"/>
+                                            <outlet property="pickPlace" destination="MVp-6k-9bR" id="7WM-r6-kjq"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Mok-0i-GN0" id="4Ha-r4-J0t"/>
+                                    <outlet property="delegate" destination="Mok-0i-GN0" id="nCl-40-bD7"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -449,6 +459,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WsW-UI-cit"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="Etz-lp-XSa" id="Kbb-CV-NOw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w78-Ds-12h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

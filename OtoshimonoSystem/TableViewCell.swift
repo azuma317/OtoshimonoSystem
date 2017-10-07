@@ -25,3 +25,19 @@ class TableViewCell: UITableViewCell {
     }
 
 }
+
+class CategoryTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var pickImage: UIImageView!
+    @IBOutlet weak var pickName: UILabel!
+    @IBOutlet weak var pickDate: UILabel!
+    @IBOutlet weak var pickPlace: UILabel!
+    @IBOutlet weak var pickDetail: UILabel!
+    
+    func setCell(item: Item) {
+        pickName.text = item.name
+        pickDate.text = item.date
+        pickPlace.text = item.place
+        pickDetail.text = item.detail
+    }
+}

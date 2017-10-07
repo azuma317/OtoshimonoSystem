@@ -7,7 +7,9 @@
 //
 
 import UIKit
+import AlamofireImage
 
+// 落とし物の詳細を表示するView
 class SecondViewController: ViewController {
     
     @IBOutlet weak var name: UILabel!
@@ -15,13 +17,18 @@ class SecondViewController: ViewController {
     @IBOutlet weak var date: UILabel!
     @IBOutlet weak var place: UILabel!
     @IBOutlet weak var detail: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
     
     var item: Item?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // itemがOptional型にしているので??0を入れておく
+        let url: URL = URL(string: "http://macintosh-no-macbook-pro.local:8888/image/\(item?.id ?? 0).jpeg")!
+        
         setData(item: item!)
+        imageView.af_setImage(withURL: url)
     }
     
     // Itemの変数から直接値を代入
