@@ -463,6 +463,7 @@
                         <viewLayoutGuide key="safeArea" id="WsW-UI-cit"/>
                     </view>
                     <connections>
+                        <outlet property="labelName" destination="Ad0-Yg-ENw" id="0DE-k8-qJv"/>
                         <outlet property="tableView" destination="Etz-lp-XSa" id="Kbb-CV-NOw"/>
                     </connections>
                 </viewController>

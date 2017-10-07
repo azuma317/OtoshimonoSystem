@@ -70,6 +70,11 @@ extension SearchViewController: UITableViewDelegate {
         categoryView.items = items!
         categoryView.selectedSection = indexPath.section
         categoryView.selectedRow = indexPath.item
+        if indexPath.section == 0 {
+            categoryView.name = category1[indexPath.item]
+        } else if indexPath.section == 1 {
+            categoryView.name = category2[indexPath.item]
+        }
         present(categoryView, animated: true, completion: nil)
     }
     

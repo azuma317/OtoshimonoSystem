@@ -16,13 +16,16 @@ class CategoryViewController: UIViewController {
     var selectedRow: Int?
     
     let places: [String] = ["north", "south", "east", "west", "center", "other"]
+    var name: String = ""
 
+    @IBOutlet weak var labelName: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         items = categoryItem(section: selectedSection!, row: selectedRow!)
+        labelName.text = name
         
         tableView.reloadData()
     }
