@@ -356,6 +356,9 @@
                                     <constraint firstAttribute="width" constant="100" id="ycg-ZG-WB4"/>
                                 </constraints>
                                 <state key="normal" title="&lt;"/>
+                                <connections>
+                                    <action selector="close:" destination="Mok-0i-GN0" eventType="touchUpInside" id="5by-R9-XKJ"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Etz-lp-XSa">
                                 <rect key="frame" x="0.0" y="95" width="1024" height="673"/>

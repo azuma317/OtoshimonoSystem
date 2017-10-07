@@ -9,6 +9,7 @@
 import UIKit
 import AlamofireImage
 
+// カテゴリごとの表示
 class CategoryViewController: UIViewController {
     
     var items: [Item] = []
@@ -93,7 +94,7 @@ class CategoryViewController: UIViewController {
         } else if section == 1 {
             
             for item in items {
-                if item.kind == row {
+                if item.kind == row+1 {
                     categoryItems.append(item)
                 }
             }
@@ -103,6 +104,11 @@ class CategoryViewController: UIViewController {
             return categoryItems
         }
     }
+    
+    @IBAction func close(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 
 }
 
@@ -121,5 +127,24 @@ extension CategoryViewController: UITableViewDataSource {
         cell.pickImage.af_setImage(withURL: URL(string: "http://macintosh-no-macbook-pro.local:8888/image/\(items[indexPath.item].id).jpeg")!)
         
         return cell
+    }
+}
+
+extension CategoryViewController: UITableViewDelegate {
+    
+    // Cellの高さを設定
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
+    
+    // cellが選択されたときの遷移処理
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        //遷移先のView選択と遷移の処理
+        let storyboard = self.storyboard
+        let secondView = storyboard?.instantiateViewController(withIdentifier: "secondView") as! SecondViewController
+        secondView.item = items[indexPath.item]
+        present(secondView, animated: true, completion: nil)
+        
     }
 }
