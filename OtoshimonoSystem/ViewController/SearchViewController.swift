@@ -11,7 +11,7 @@ import UIKit
 class SearchViewController: UIViewController {
     
     let sectionTitle: [String] = ["場所", "種類"]
-    let category1: [String] = ["AV講義室", "AV演習室", "端末講義室", "端末演習室", "1階ロビー", "2階ロビー", "その他"]
+    let category1: [String] = ["北口", "南口", "東口", "西口", "中央口", "その他"]
     let category2: [String] = ["かさ", "教科書・本", "電子機器", "ノート・ファイル", "文房具", "衣類・タオル", "鍵・アクセサリー", "バッグ・シューズ", "その他"]
     
     var items: [Item]?
@@ -22,7 +22,6 @@ class SearchViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    // 閉じる
     @IBAction func close(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
@@ -30,17 +29,14 @@ class SearchViewController: UIViewController {
 
 extension SearchViewController: UITableViewDataSource {
     
-    // sectionの数
     func numberOfSections(in tableView: UITableView) -> Int {
         return sectionTitle.count
     }
     
-    // sectionのタイトル
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return sectionTitle[section]
     }
     
-    // sectionの高さ
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 50
     }

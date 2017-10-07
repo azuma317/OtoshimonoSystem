@@ -9,12 +9,13 @@
 import UIKit
 import AlamofireImage
 
-// カテゴリごとの表示
 class CategoryViewController: UIViewController {
     
     var items: [Item] = []
     var selectedSection: Int?
     var selectedRow: Int?
+    
+    let places: [String] = ["north", "south", "east", "west", "center", "other"]
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -32,64 +33,12 @@ class CategoryViewController: UIViewController {
         
         if section == 0 {
             
-            if row == 0 {
-                
-                for item in items {
-                    if item.place == "AV" {
-                        categoryItems.append(item)
-                    }
+            for item in items {
+                if item.place == places[row] {
+                    categoryItems.append(item)
                 }
-                
-                return categoryItems
-            } else if row == 1 {
-                
-                for item in items {
-                    if item.place == "AVE" {
-                        categoryItems.append(item)
-                    }
-                }
-                
-                return categoryItems
-            } else if row == 2 {
-                
-                for item in items {
-                    if item.place == "3F" {
-                        categoryItems.append(item)
-                    }
-                }
-                
-                return categoryItems
-            } else if row == 3 {
-                
-                for item in items {
-                    if item.place == "3F1" {
-                        categoryItems.append(item)
-                    }
-                }
-                
-                return categoryItems
-            } else if row == 4 {
-                
-                for item in items {
-                    if item.place == "1F" {
-                        categoryItems.append(item)
-                    }
-                }
-                
-                return categoryItems
-            } else if row == 5 {
-                
-                for item in items {
-                    if item.place == "2F" {
-                        categoryItems.append(item)
-                    }
-                }
-                
-                return categoryItems
-            } else {
-                
-                return categoryItems
             }
+            return categoryItems
             
         } else if section == 1 {
             
@@ -124,7 +73,7 @@ extension CategoryViewController: UITableViewDataSource {
         
         cell.setCell(item: items[indexPath.item])
         
-        cell.pickImage.af_setImage(withURL: URL(string: "http://macintosh-no-macbook-pro.local:8888/image/\(items[indexPath.item].id).jpeg")!)
+        cell.pickImage.af_setImage(withURL: URL(string: "落とし物の写真のURL")!)
         
         return cell
     }
@@ -132,15 +81,12 @@ extension CategoryViewController: UITableViewDataSource {
 
 extension CategoryViewController: UITableViewDelegate {
     
-    // Cellの高さを設定
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
     }
     
-    // cellが選択されたときの遷移処理
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        //遷移先のView選択と遷移の処理
         let storyboard = self.storyboard
         let secondView = storyboard?.instantiateViewController(withIdentifier: "secondView") as! SecondViewController
         secondView.item = items[indexPath.item]

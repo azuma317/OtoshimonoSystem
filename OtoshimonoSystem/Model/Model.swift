@@ -9,7 +9,6 @@
 import Foundation
 import SwiftyJSON
 
-// 落とし物の構造体
 struct Item {
     let id: Int
     let name: String

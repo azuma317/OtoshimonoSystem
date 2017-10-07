@@ -9,7 +9,6 @@
 import UIKit
 import AlamofireImage
 
-// 落とし物の詳細を表示するView
 class SecondViewController: ViewController {
     
     @IBOutlet weak var name: UILabel!
@@ -24,14 +23,12 @@ class SecondViewController: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // itemがOptional型にしているので??0を入れておく
         let url: URL = URL(string: "落とし物の写真のURL")!
         
         setData(item: item!)
         imageView.af_setImage(withURL: url)
     }
     
-    // Itemの変数から直接値を代入
     func setData(item: Item) {
         name.text = item.name
         id.text = String(item.id)
@@ -40,7 +37,6 @@ class SecondViewController: ViewController {
         detail.text = item.detail
     }
 
-    // 戻るボタンで画面を閉じる
     @IBAction func close(_ sender: Any) {
         
         dismiss(animated: true, completion: nil)

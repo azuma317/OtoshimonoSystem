@@ -82,15 +82,15 @@
 		755E00E01F87160900D0292F /* OtoshimonoSystem */ = {
 			isa = PBXGroup;
 			children = (
+				755E00E11F87160900D0292F /* AppDelegate.swift */,
 				755E00F51F87749200D0292F /* ViewController */,
 				755E00FA1F877B3900D0292F /* Model */,
-				755E00E11F87160900D0292F /* AppDelegate.swift */,
+				755E00F61F8774D900D0292F /* TableViewCell.swift */,
+				755E00F81F87781000D0292F /* Request.swift */,
 				755E00E51F87160900D0292F /* Main.storyboard */,
 				755E00E81F87160900D0292F /* Assets.xcassets */,
 				755E00EA1F87160900D0292F /* LaunchScreen.storyboard */,
 				755E00ED1F87160900D0292F /* Info.plist */,
-				755E00F61F8774D900D0292F /* TableViewCell.swift */,
-				755E00F81F87781000D0292F /* Request.swift */,
 			);
 			path = OtoshimonoSystem;
 			sourceTree = "<group>";
