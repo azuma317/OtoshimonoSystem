@@ -37,7 +37,25 @@ class CategoryTableViewCell: UITableViewCell {
     func setCell(item: Item) {
         pickName.text = item.name
         pickDate.text = item.date
-        pickPlace.text = item.place
+        pickPlace.text = getPlace(place: item.place)
         pickDetail.text = item.detail
     }
+    
+    func getPlace(place: String) -> String {
+        switch place {
+        case "north":
+            return "北口"
+        case "south":
+            return "南口"
+        case "east":
+            return "東口"
+        case "west":
+            return "西口"
+        case "center":
+            return "中央口"
+        default:
+            return "その他"
+        }
+    }
+    
 }
