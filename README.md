@@ -8,7 +8,7 @@
 <img src="https://user-images.githubusercontent.com/27613682/31308965-d909c3e2-abb9-11e7-906f-347439e5f3b4.PNG" alt="Otoshimono" title="Otoshimono" width=500 height=300>
 
 ## Description
-駅を想定した落とし物検索システムです。サーバー間で落とし物の写真やデータのやり取りして表示しています。
+落とし物検索システムです。サーバー間で落とし物の写真やデータのやり取りして表示しています。
 
 ## Requirement
 swift
